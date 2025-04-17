@@ -6,7 +6,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
 	theme: {
@@ -27,6 +27,13 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
+				},
+				minecraft: {
+					green: '#5bbd2b',
+					brown: '#7D4A19',
+					dirt: '#9b7653',
+					stone: '#767676',
+					darkgray: '#222222'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -84,11 +91,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
