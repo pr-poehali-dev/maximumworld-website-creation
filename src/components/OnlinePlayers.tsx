@@ -41,8 +41,10 @@ const OnlinePlayers = () => {
               <span className="text-white">Игроков онлайн:</span>
               <span className="text-minecraft-green font-bold">{currentPlayers}/{maxPlayers}</span>
             </div>
-            <Progress value={(currentPlayers / maxPlayers) * 100} className="h-4 bg-gray-700" 
-              indicatorClassName="bg-minecraft-green" />
+            <Progress 
+              value={(currentPlayers / maxPlayers) * 100} 
+              className="h-4 w-full overflow-hidden rounded-full bg-gray-700"
+            />
             
             <div className="mt-8">
               <h3 className="text-xl font-bold mb-4 text-white">Топ игроки онлайн:</h3>
